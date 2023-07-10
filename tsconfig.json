@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "incremental": true,
+    "outDir": "dist",
+    "target": "es2019",
+    "module": "es2020",
+    "moduleResolution": "node",
+    "lib": ["es2019", "dom", "ES2021.String"],
+    "skipLibCheck": true,
+    "declaration": true,
+    "declarationMap": true,
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "strict": true,
+    "types": ["node"]
+  },
+  "include": [
+    "index.ts",
+    "**/*.ts",
+  ],
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons&display=block"
+      rel="stylesheet"
+    />
+    <script type="module">
+      import "@material/mwc-icon";
+    </script>
+    <script type="module" src="./index.ts"></script>
+  </head>
+
+  <body>
+    <h2>This is a demo of the `ds-dropdown` web component.</h2>
+    <p>
+      The default style with
+      <code>title="my ds-dropdown"</code>
+    </p>
+    <ds-dropdown title="my ds-dropdown" isFirst="true">
+      my body content
+    </ds-dropdown>
+    <ds-dropdown title="my ds-dropdown">
+      <p slot="title">
+        The title can be
+        <span st>rich</span>
+        html using
+        <code>slot="title"</code>
+      </p>
+
+      my body content
+    </ds-dropdown>
+    <ds-dropdown title="my ds-dropdown" isLast="true">
+      <p slot="title">
+        Furter more you can add things (x) to the right of the carret
+        <code>slot="more"</code>
+      </p>
+      <div slot="more">(x)</div>
+      my body content
+    </ds-dropdown>
+    <p>
+      You can tell that you want a first or last style using
+      <code> isFirst="true" isLast="true"</code>
+    </p>
+    <ds-dropdown title="1st" isFirst="true"> my first content </ds-dropdown>
+    <ds-dropdown title="2nd"> my middle content </ds-dropdown>
+    <ds-dropdown title="3rd" isLast="true"> my last content </ds-dropdown>
+    <p>You can apply your own colors:</p>
+    <div style="background-color: blue; color: white; border-radius: 1rem">
+      <ds-dropdown isFirst="true" isLast="true">
+        <div style="background-color: yellow; color: black">
+          my body content
+        </div>
+      </ds-dropdown>
+    </div>
+
+    <p>
+      You can drop the default style using
+      <code>noStyle="true"</code>
+    </p>
+    my body content
+    <ds-dropdown noStyle="true" title="my title"> </ds-dropdown>
+    <p>and provide your own</p>
+    <div style="background-color: blue; color: white">
+      <ds-dropdown open="true" noStyle="true" title="my title">
+        <div style="background-color: yellow; color: black">
+          my body content
+        </div>
+      </ds-dropdown>
+    </div>
+    <!-- use dev server -->
+    <cloudbees-log-viewer-dev></cloudbees-log-viewer-dev>
+  </body>
+</html>

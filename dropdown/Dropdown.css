@@ -1,0 +1,15 @@
+.outter{
+    @apply mx-3 mt-1 p-3 font-default font-normal text-base;
+}
+.first{
+    @apply rounded-t-lg border-b border-gray-600;
+}
+.last{
+    @apply rounded-b-lg;
+}
+.middle{
+    @apply border-b border-gray-600;
+}
+.trigger{
+    @apply flex justify-between items-center cursor-pointer;
+}

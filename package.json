@@ -1,0 +1,91 @@
+{
+  "packageManager": "yarn@3.2.4",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "commonjs",
+  "license": "Apache-2.0",
+  "name": "scherler_design_system",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "targets": {
+    "index": {
+      "source": "index.ts",
+      "distDir": "dist"
+    },
+    "dropdown": {
+      "source": "dropdown/index.ts",
+      "distDir": "dropdown"
+    }
+  },
+  "files": [
+    "**/*.js",
+    "**/*.js.map",
+    "**/*.d.ts",
+    "**/*.scss",
+    "!.parcelrc",
+    "!.parcel-cache",
+    "!**/test/**",
+    "!**/testing/**",
+    "!**/*_test.*",
+    "!.wireit/**",
+    "!catalog"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:scherler/scherler_design_system.git"
+  },
+  "scripts": {
+    ":add": "SWC_PREFIX=ds- SWC_SRC=./ sirocco-wc add -t ''",
+    "check": "wireit",
+    "build": "wireit",
+    "build:bundle": "wireit",
+    "build:css": "wireit",
+    "start": "wireit"
+  },
+  "wireit": {
+    "build": {
+      "command": "yarn build:bundle",
+      "dependencies": [
+        "build:css"
+      ]
+    },
+    "build:bundle": {
+      "command": "parcel build --no-cache "
+    },
+    "build:css": {
+      "command": "sirocco-wc buildCss",
+      "env": {
+        "SWC_CSS": "**/*.css"
+      }
+    },
+    "check": {
+      "command": "tsc --noEmit"
+    },
+    "start": {
+      "command": "parcel --no-cache index.html",
+      "service": true,
+      "dependencies": [
+        "build:css"
+      ]
+    }
+  },
+  "devDependencies": {
+    "@parcel/config-default": "^2.9.3",
+    "@parcel/core": "^2.9.3",
+    "@parcel/packager-ts": "2.9.3",
+    "@parcel/transformer-typescript-types": "2.9.3",
+    "@parcel/validator-typescript": "^2.9.3",
+    "@types/node": "^20.4.1",
+    "parcel": "^2.9.3",
+    "sirocco-wc": "^1.1.13",
+    "typescript": ">=3.0.0",
+    "wireit": "^0.9.5"
+  },
+  "dependencies": {
+    "@material/mwc-icon": "^0.27.0",
+    "@swc/helpers": "^0.5.1",
+    "lit": "^2.7.6"
+  }
+}
