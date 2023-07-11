@@ -8,18 +8,13 @@ The default style with `title="my ds-dropdown"`
 </ds-dropdown>
 <ds-dropdown title="my ds-dropdown">
     <p slot="title">
-    The title can be
-    <span st>rich</span>
-    html using
-    `slot="title"`
+    The title can be <span>rich</span> html using slot="title"
     </p>
-
     my body content
 </ds-dropdown>
 <ds-dropdown title="my ds-dropdown" isLast="true">
     <p slot="title">
-    Furter more you can add things (x) to the right of the carret
-    `slot="more"`
+    Furter more you can add things (x) to the right of the carret slot="more"
     </p>
     <div slot="more">(x)</div>
     my body content
@@ -27,7 +22,6 @@ The default style with `title="my ds-dropdown"`
 ```
 
 ![image](https://github.com/scherler/scherler_design_system/assets/596701/085cc84f-2d07-4827-96a9-8380c539546e)
-
 
 You can tell that you want a first or last style using `isFirst="true" isLast="true"`
 
