@@ -1,12 +1,9 @@
 {
   "packageManager": "yarn@3.2.4",
-  "publishConfig": {
-    "access": "public"
-  },
   "type": "commonjs",
   "license": "Apache-2.0",
   "name": "scherler_design_system",
-  "version": "1.0.0",
+  "version": "1.0.0-pre1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "targets": {
@@ -22,14 +19,15 @@
   "files": [
     "**/*.js",
     "**/*.js.map",
-    "**/*.d.ts",
-    "**/*.scss",
     "!.parcelrc",
-    "!.parcel-cache",
+    "!.yarn/**",
+    "!.git/**",
+    "!.parcel-cache/**",
     "!**/test/**",
     "!**/testing/**",
     "!**/*_test.*",
     "!.wireit/**",
+    "!node_modules/**",
     "!catalog"
   ],
   "repository": {

@@ -1,0 +1,11 @@
+node_modules/
+*.js
+*.css
+*.css.ts
+*.map
+*.d.ts
+!types/*.d.ts
+.wireit/
+docs/
+catalog/
+.yarn/
