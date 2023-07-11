@@ -1,6 +1,6 @@
 ## This is a demo of the `ds-dropdown` web component
 
-      The default style with `title="my ds-dropdown"`
+The default style with `title="my ds-dropdown"`
 
 ```html
 <ds-dropdown title="my ds-dropdown" isFirst="true">
@@ -26,7 +26,7 @@
 </ds-dropdown>
 ```
 
-      You can tell that you want a first or last style using `isFirst="true" isLast="true"`
+You can tell that you want a first or last style using `isFirst="true" isLast="true"`
 
 ```html
 <ds-dropdown title="1st" isFirst="true"> my first content </ds-dropdown>
@@ -45,16 +45,20 @@ You can apply your own colors:
     </ds-dropdown>
 </div>```
 
-      You can drop the default style using `noStyle="true"` 
-`<ds-dropdown noStyle="true" title="my title"> </ds-dropdown>`
+You can drop the default style using `noStyle="true"` 
 
-    and provide your own
-   ```html
-   <div style="background-color: blue; color: white">
-      <ds-dropdown open="true" noStyle="true" title="my title">
-        <div style="background-color: yellow; color: black">
-          my body content
-        </div>
-      </ds-dropdown>
+```html
+<ds-dropdown noStyle="true" title="my title"> </ds-dropdown>
+```
+
+and provide your own
+
+```html
+<div style="background-color: blue; color: white">
+    <ds-dropdown open="true" noStyle="true" title="my title">
+    <div style="background-color: yellow; color: black">
+        my body content
     </div>
-    ```
+    </ds-dropdown>
+</div>
+```
