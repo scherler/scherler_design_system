@@ -76,3 +76,7 @@ This will create a new component and link it in the project hierarchy
 ## The anatomy of a component
 
 To allow automatic wiring and export of all web components, we recommend using one folder per component/view and [barrels](https://basarat.gitbook.io/typescript/main-1/barrel). The `*.styles.ts` file is generated so do not edit it since it will be overridden by the build process. You can either use the `*.css` file to define your styles or use tailwind-driven classes, which will then be exported to the `*.styles.ts` file.
+
+## Docu
+
+[Dropdown](./docu/dropdown.md)
