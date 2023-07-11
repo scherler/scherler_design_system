@@ -3,6 +3,8 @@
 This design system is based on the material design framework and uses their underlying web components.
 We provide different implementations of advanced patterns and functionality as reusable web components.
 
+You need to add all material dependencies yourself to prevent multiple definition of `MWC` components such as `<mwc-icon>refresh</mwc-icon>` that as well is true for fonts definitions.
+
 ## Install
 
 Install Material web components using
