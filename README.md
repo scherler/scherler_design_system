@@ -35,9 +35,7 @@ import 'scherler_design_system';
 ## Usage
 
 Use the `<component-name>` tag in HTML markup. Refer to the
-[component docs](components/) for more guidance on using each component.
-
-[Playground](https://lit.dev/playground/#gist=37d28012c5ec6de30809bdf4a6e26cb6)<!-- {.external} -->
+[component docs](docu/components/) for more guidance on using each component.
 
 ```html
 <script type="module" src="./index.js"></script>
@@ -76,7 +74,3 @@ This will create a new component and link it in the project hierarchy
 ## The anatomy of a component
 
 To allow automatic wiring and export of all web components, we recommend using one folder per component/view and [barrels](https://basarat.gitbook.io/typescript/main-1/barrel). The `*.styles.ts` file is generated so do not edit it since it will be overridden by the build process. You can either use the `*.css` file to define your styles or use tailwind-driven classes, which will then be exported to the `*.styles.ts` file.
-
-## Docu
-
-[Dropdown](./docu/dropdown.md)
