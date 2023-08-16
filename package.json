@@ -14,6 +14,10 @@
     "dropdown": {
       "source": "dropdown/index.ts",
       "distDir": "dropdown"
+    },
+    "searchbox": {
+      "source": "searchbox/index.ts",
+      "distDir": "searchbox"
     }
   },
   "files": [
