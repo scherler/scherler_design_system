@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons&display=block"
+      rel="stylesheet"
+    />
+    <script type="module">
+      import "@material/mwc-icon";
+    </script>
+    <script type="module" src="./index.ts"></script>
+  </head>
+
+  <body>
+    <h2>This is a demo of the `ds-searchbox` web component.</h2>
+    <p>
+      The default style with
+      <code>title="my ds-searchbox"</code>
+    </p>
+    <ds-searchbox title="my ds-searchbox">
+    </ds-searchbox>
+    <p>
+      You can tell that you want a first or last style using
+      <code> canSearch="false"</code>
+    </p>
+    <ds-searchbox canSearch="false">
+    </ds-searchbox>
+  </body>
+</html>
